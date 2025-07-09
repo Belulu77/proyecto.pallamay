@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Tienda Pallamay: Artículos Únicos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados si son necesarios (sin @apply) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro */
+        }
+        /* Definiciones de colores para usar en clases de Tailwind si no están en el default */
+        /* Puedes personalizar estos si quieres usar colores específicos que no sean de Tailwind */
+        .header-bg-purple {
+            background-color: #6B46C1;
+        }
+        .btn-bg-purple {
+            background-color: #8B5CF6;
+        }
+        .btn-hover-bg-purple-dark {
+            background-color: #7C3AED;
+        }
+        .btn-text-purple {
+            color: #8B5CF6;
+        }
+        .text-pallamay-purple {
+            color: #6B46C1;
+        }
+        .border-purple-custom {
+            border-color: #8B5CF6;
+        }
+
+        /* Algunas clases que puedes querer aplicar directamente si no están en Tailwind o para overrides */
+        .card-shadow-custom {
+            box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.1), 0 4px 6px -2px rgba(139, 92, 246, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <header class="header-bg-purple text-white p-6 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">Tienda Pallamay</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="inicio.html" class="hover:text-purple-200 text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Productos</a></li>
+                    <li><a href="carrito.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Carrito</a></li>
+                    <li><a href="contacto.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Contacto</a></li>
+                    <li><a href="auth.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8 mt-12 flex-grow">
+        <section class="text-center bg-white p-12 rounded-xl shadow-2xl card-shadow-custom max-w-5xl mx-auto mb-16 border-t-8 border-purple-500">
+            <h2 class="text-6xl font-extrabold text-pallamay-purple mb-6 leading-tight">
+                Bienvenido a <span class="block mt-2">Tienda Pallamay</span>
+            </h2>
+            <p class="text-gray-700 text-xl leading-relaxed mb-10">
+                Descubre nuestra **exclusiva selección de artículos únicos y de alta calidad**. En Tienda Pallamay, nos dedicamos a curar piezas que no solo son objetos, sino **declaraciones de estilo y expresión artística**. Cada producto es una joya seleccionada por su **excelencia, diseño innovador y la historia que lleva consigo**, incluyendo **obras de artistas reconocidos**.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="productos.html" class="btn-bg-purple text-white text-xl py-3 px-8 rounded-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:btn-hover-bg-purple-dark hover:transform hover:-translate-y-0.5 hover:shadow-lg">Explorar Productos Ahora</a>
+                <a href="contacto.html" class="bg-transparent btn-text-purple border-2 border-purple-400 text-xl py-3 px-8 rounded-lg font-semibold transition-all duration-300 ease-in-out hover:btn-bg-purple hover:text-white hover:transform hover:-translate-y-0.5 hover:shadow-lg">¿Necesitas Ayuda?</a>
+            </div>
+        </section>
+
+        <section class="bg-white p-10 rounded-xl shadow-xl card-shadow-custom max-w-4xl mx-auto mb-16 border-t-4 border-purple-400">
+            <h3 class="text-4xl font-bold text-gray-800 mb-6 text-center">¿Quiénes Somos?</h3>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                Somos un equipo de entusiastas del arte y el diseño, apasionados por conectar a nuestros clientes con **piezas extraordinarias que trascienden lo común**. En Tienda Pallamay, cada artículo es cuidadosamente seleccionado, asegurando que solo lo más auténtico y de la mejor calidad llegue a tus manos.
+            </p>
+            <div class="text-center">
+                <a href="quienes-somos.html" class="bg-transparent btn-text-purple border-2 border-purple-400 text-lg py-3 px-6 rounded-lg font-semibold transition-all duration-300 ease-in-out hover:btn-bg-purple hover:text-white hover:transform hover:-translate-y-0.5 hover:shadow-lg">Conoce Nuestra Historia</a>
+            </div>
+        </section>
+
+        <section class="bg-white p-10 rounded-xl shadow-xl card-shadow-custom max-w-4xl mx-auto border-t-4 border-purple-400">
+            <h3 class="text-4xl font-bold text-gray-800 mb-6 text-center">¿Qué Ofrecemos?</h3>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                En Tienda Pallamay, la calidad y la exclusividad son nuestra promesa. Te ofrecemos una curaduría de **artículos de alta gama, incluyendo obras y productos de artistas conocidos y emergentes**. Desde esculturas detalladas hasta grabados de edición limitada y objetos de diseño funcional, cada pieza es sometida a rigurosos controles para asegurar su autenticidad y excelencia.
+            </p>
+            <div class="text-center">
+                <a href="que-ofrecemos.html" class="btn-bg-purple text-white text-lg py-3 px-6 rounded-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:btn-hover-bg-purple-dark hover:transform hover:-translate-y-0.5 hover:shadow-lg">Descubre Nuestra Colección</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="header-bg-purple text-white p-6 mt-16 shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Tienda Pallamay. Todos los derechos reservados.</p>
+            <p>Hecho con pasión en Argentina.</p>
+        </div>
+    </footer>
+</body>
+</html>

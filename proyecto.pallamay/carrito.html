@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Mi Tienda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-purple': '#5b21b6', // Equivalente a header-purple
+                        'accent-purple': '#8b5cf6',  // Equivalente a btn-purple normal
+                        'dark-purple': '#7c3aed',    // Equivalente a btn-purple hover
+                        'light-purple-border': '#c4b5fd', // Equivalente a card-border-purple
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <header class="bg-primary-purple text-white p-6 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">Mi Tienda de Artículos</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="inicio.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Productos</a></li>
+                    <li><a href="carrito.html" class="hover:text-purple-200 text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105">Carrito</a></li>
+                    <li><a href="contacto.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Contacto</a></li>
+                    <li><a href="auth.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8 mt-12 flex-grow">
+        <h2 class="text-5xl font-extrabold text-gray-800 mb-12 text-center">Tu Carrito de Compras</h2>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-white rounded-xl shadow-2xl p-8 border-t-4 border-light-purple-border">
+                <div class="flex items-center justify-between border-b border-gray-200 py-6">
+                    <div class="flex items-center space-x-6">
+                        <img src="https://via.placeholder.com/100x100/8B5CF6/FFFFFF?text=Producto+1" alt="Producto 1" class="w-24 h-24 object-cover rounded-lg shadow-md">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900">Artículo de Prueba Uno</h3>
+                            <p class="text-gray-600 text-md">Cantidad: 1</p>
+                            <p class="text-lg font-medium text-purple-700">$29.99</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="text-red-500 hover:text-red-700 font-semibold transition duration-300 ease-in-out">Eliminar</button>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between border-b border-gray-200 py-6">
+                    <div class="flex items-center space-x-6">
+                        <img src="https://via.placeholder.com/100x100/C084FC/FFFFFF?text=Producto+2" alt="Producto 2" class="w-24 h-24 object-cover rounded-lg shadow-md">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900">Artículo de Prueba Dos</h3>
+                            <p class="text-gray-600 text-md">Cantidad: 2</p>
+                            <p class="text-lg font-medium text-purple-700">$49.50 c/u</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="text-red-500 hover:text-red-700 font-semibold transition duration-300 ease-in-out">Eliminar</button>
+                    </div>
+                </div>
+
+                <p class="text-center text-gray-500 mt-8 text-lg">Tu carrito está esperando tus próximas adiciones. ¡Explora más productos!</p>
+            </div>
+
+            <div class="md:col-span-1 bg-white rounded-xl shadow-2xl p-8 border-t-4 border-light-purple-border h-fit sticky top-24">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Resumen de tu Pedido</h3>
+                <div class="flex justify-between items-center text-xl text-gray-700 mb-3">
+                    <span>Subtotal:</span>
+                    <span class="font-semibold">$128.99</span>
+                </div>
+                <div class="flex justify-between items-center text-xl text-gray-700 mb-3">
+                    <span>Envío:</span>
+                    <span class="font-semibold">$5.00</span>
+                </div>
+                <div class="flex justify-between items-center text-2xl font-extrabold text-gray-900 border-t-2 border-gray-200 pt-4 mt-4">
+                    <span>Total:</span>
+                    <span class="text-accent-purple">$133.99</span>
+                </div>
+                <button class="w-full bg-accent-purple text-white text-xl py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 ease-in-out hover:bg-dark-purple hover:shadow-xl mt-8">
+                    Proceder al Pago
+                </button>
+                <a href="productos.html" class="block text-center text-accent-purple border-2 border-accent-purple py-3 rounded-lg font-semibold mt-4 transition-all duration-300 ease-in-out hover:bg-accent-purple hover:text-white">
+                    Continuar Comprando
+                </a>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-6 mt-16">
+            <a href="productos.html" class="px-8 py-4 bg-gray-200 text-gray-800 rounded-lg text-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-gray-300 hover:shadow-lg transform hover:-translate-y-0.5">
+                ← Volver a Productos
+            </a>
+            <a href="inicio.html" class="px-8 py-4 bg-gray-200 text-gray-800 rounded-lg text-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-gray-300 hover:shadow-lg transform hover:-translate-y-0.5">
+                Volver al Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-primary-purple text-white p-6 mt-16 shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Mi Tienda de Artículos. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión y Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

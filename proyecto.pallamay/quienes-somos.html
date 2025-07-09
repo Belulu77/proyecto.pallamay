@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Tienda Pallamay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+        }
+        .header-bg-purple {
+            background-color: #6B46C1;
+        }
+        .btn-bg-purple {
+            background-color: #8B5CF6;
+        }
+        .btn-hover-bg-purple-dark {
+            background-color: #7C3AED;
+        }
+        .btn-text-purple {
+            color: #8B5CF6;
+        }
+        .text-pallamay-purple {
+            color: #6B46C1;
+        }
+        .card-shadow-custom {
+            box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.1), 0 4px 6px -2px rgba(139, 92, 246, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <header class="header-bg-purple text-white p-6 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">Tienda Pallamay</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="inicio.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Inicio</a></li>
+                    <li><a href="productos.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Productos</a></li>
+                    <li><a href="carrito.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Carrito</a></li>
+                    <li><a href="contacto.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Contacto</a></li>
+                    <li><a href="auth.html" class="hover:text-purple-200 text-lg transition duration-300 ease-in-out transform hover:scale-105">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8 mt-12 flex-grow">
+        <div class="bg-white rounded-xl shadow-xl card-shadow-custom p-10 max-w-4xl mx-auto border-t-4 border-purple-400">
+            <h2 class="text-5xl font-extrabold text-gray-800 mb-8 text-center">Nuestra Historia y Pasión</h2>
+
+            <div class="mb-10 border-b pb-8 border-gray-200">
+                <h3 class="text-3xl font-semibold text-pallamay-purple mb-4">La Esencia de Tienda Pallamay</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    En **Tienda Pallamay**, somos más que un simple e-commerce; somos curadores apasionados de la belleza, la innovación y la expresión artística. Fundada en 2023 en el corazón de Argentina, nuestra plataforma nació de un sueño compartido: crear un espacio donde **objetos con alma y propósito** pudieran encontrar su hogar. Nuestro nombre, "Pallamay", evoca un sentido de **autenticidad y conexión con nuestras raíces**, reflejando nuestro compromiso con la calidad y la singularidad.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Cada miembro de nuestro equipo es un coleccionista y un entusiasta del diseño, dedicado a encontrar piezas que no solo adornen espacios, sino que también cuenten historias y resuenen con la individualidad de quienes las poseen.
+                </p>
+            </div>
+
+            <div class="mb-10 border-b pb-8 border-gray-200">
+                <h3 class="text-3xl font-semibold text-pallamay-purple mb-4">Nuestra Misión y Visión</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Nuestra misión es **democratizar el acceso a piezas de arte y diseño de alta calidad**, llevando la excelencia directamente a tu puerta. Nos esforzamos por ser el puente entre creadores talentosos y aquellos que aprecian el valor intrínseco de lo bien hecho.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Nuestra visión es convertirnos en la principal referencia para **artículos únicos y de autor en Argentina y la región**, reconocidos por nuestra curaduría impecable, nuestro compromiso con la autenticidad y nuestra contribución al desarrollo de la cultura del diseño y el arte.
+                </p>
+            </div>
+
+            <div class="mb-10">
+                <h3 class="text-3xl font-semibold text-pallamay-purple mb-4">Nuestros Valores Fundamentales</h3>
+                <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed space-y-3">
+                    <li>**Calidad Innegable:** Cada artículo es rigurosamente inspeccionado para asegurar su excelencia y durabilidad.</li>
+                    <li>**Originalidad y Diseño:** Priorizamos piezas que se distinguen por su innovación y su carácter único.</li>
+                    <li>**Autenticidad:** Garantizamos la procedencia y la genuinidad de cada obra de arte y producto.</li>
+                    <li>**Pasión por el Detalle:** Nuestro amor por lo que hacemos se refleja en cada interacción y cada pieza.</li>
+                    <li>**Conexión Humana:** Valoramos la relación con nuestros clientes y creadores, fomentando una comunidad.</li>
+                    <li>**Compromiso con el Arte Local:** Apoyamos activamente a artistas y diseñadores argentinos y latinoamericanos.</li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-700 text-xl font-semibold mb-6">
+                    ¿Te gustaría saber más o tienes alguna pregunta específica?
+                </p>
+                <a href="contacto.html" class="btn-bg-purple text-white text-lg py-3 px-8 rounded-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:btn-hover-bg-purple-dark hover:transform hover:-translate-y-0.5 hover:shadow-lg">Contáctanos</a>
+            </div>
+        </div>
+                <div class="flex justify-center space-x-6 mt-16">
+            <a href="productos.html" class="px-8 py-4 bg-gray-200 text-gray-800 rounded-lg text-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-gray-300 hover:shadow-lg transform hover:-translate-y-0.5">
+                ← Volver a Productos
+            </a>
+            <a href="inicio.html" class="px-8 py-4 bg-gray-200 text-gray-800 rounded-lg text-lg font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-gray-300 hover:shadow-lg transform hover:-translate-y-0.5">
+                Volver al Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="header-bg-purple text-white p-6 mt-16 shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Tienda Pallamay. Todos los derechos reservados.</p>
+            <p>Hecho con pasión en Argentina.</p>
+        </div>
+    </footer>
+</body>
+</html>
